@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                echo 'Hello world'
+                echo 'Helloo world'
                 sh 'go build'
             }
         }
