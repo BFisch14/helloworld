@@ -18,6 +18,7 @@ pipeline {
                 GITHUB_TOKEN = credentials('go-release-sample')
             }
             steps {
+                sh 'rm -f gohello'
                 sh 'curl -sL https://git.io/goreleaser | sh'
             }
         }
