@@ -18,8 +18,8 @@ pipeline {
                 GITHUB_TOKEN = credentials('hello')
             }
             steps {
-                sh 'rm -f gohello'
-                sh 'rm -f dist'
+                sh 'rm gohello'
+                sh 'rm -r dist'
                 sh 'curl -sL https://git.io/goreleaser | sh'
             }
         }
