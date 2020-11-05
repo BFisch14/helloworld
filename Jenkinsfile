@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Release') {
             environment {
-                GITHUB_TOKEN = credentials('go-release-sample')
+                GITHUB_TOKEN = credentials('hello')
             }
             steps {
                 sh 'rm -f gohello'
