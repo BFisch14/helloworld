@@ -19,6 +19,7 @@ pipeline {
             }
             steps {
                 sh 'rm -f gohello'
+                sh 'rm -f dist'
                 sh 'curl -sL https://git.io/goreleaser | sh'
             }
         }
